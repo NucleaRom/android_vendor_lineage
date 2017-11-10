@@ -295,6 +295,15 @@ NR_DISPLAY_VERSION := $(NR_BUILD_VERSION)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.nr.display.version=$(NR_DISPLAY_VERSION)
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    vendor/nr/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/nr/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+    vendor/nr/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/nr/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/nr/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/nr/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf 
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/nr/config/partner_gms.mk
 -include vendor/cyngn/product.mk
