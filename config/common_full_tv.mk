@@ -1,6 +1,6 @@
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full.mk)
+# Inherit full common nr stuff
+$(call inherit-product, vendor/nr/config/common_full.mk)
 
 PRODUCT_PACKAGES += TvSettings
 
-DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
+DEVICE_PACKAGE_OVERLAYS += vendor/nr/overlay/tv
