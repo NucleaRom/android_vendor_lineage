@@ -5,7 +5,8 @@
 
 export C=/tmp/backupdir
 export S=$2
-export V=16.0
+export V=9
+export N=NucleaRom-9
 
 export ADDOND_VERSION=1
 
@@ -48,9 +49,13 @@ check_prereq() {
 if [ ! -r $S/build.prop ]; then
     return 0
 fi
-if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
-  echo "Not backing up files from incompatible version: $V"
-  return 0
+if ( ! grep -q "^ro.build.version.release=$V" /system/build.prop ); then
+    echo "Not backing up files from incompatible Android Version!"
+    return 0
+fi
+if ( ! grep -q "^ro.nr.build.version=$N-*" /system/build.prop ); then
+    echo "Not backing up files as NucleaRom is not installed"
+    return 0
 fi
 return 1
 }
