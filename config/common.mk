@@ -103,9 +103,10 @@ ifeq ($(WITH_TWRP),true)
 include vendor/nr/config/twrp.mk
 endif
 
-# Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+# Boot animation include
+PRODUCT_BOOTANIMATION := vendor/nr/bootanimation/bootanimation.zip
+PRODUCT_COPY_FILES += \
+vendor/nr/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
