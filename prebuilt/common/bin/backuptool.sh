@@ -36,13 +36,13 @@ if [ ! -r /system/build.prop ]; then
 fi
 
 # Check whether NR is installed
-if ( ! grep -q "^ro.nr.device=" /system/build.prop ); then
+if ( ! grep -q "^ro.nr.device=" /system/etc/prop.default system/build.prop ); then
   echo "Not backing up files as NucleaRom is not installed"
   return 0
 fi
 
 # Check whether installed Android Version is 8.1*
-if ( ! grep -q "^ro.build.version.release=$V*" /system/build.prop ); then
+if ( ! grep -q "^ro.build.version.release=$V*" /system/etc/prop.default /system/build.prop ); then
   echo "Not backing up files from incompatible Android Version!"
   return 0
 fi
