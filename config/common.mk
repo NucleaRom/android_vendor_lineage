@@ -279,6 +279,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.nr.version=$(NR_VERSION) \
     ro.lineagelegal.url=https://lineageos.org/legal
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=$(NR_BUILD_VERSION) \
+    ro.nr.buildtype=$(NR_BUILDTYPE) \
+    ro.nr.version=$(NR_VERSION) 
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/nr/build/target/product/security/nr
 
