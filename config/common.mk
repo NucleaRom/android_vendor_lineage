@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
 # Extra tools in nr
 PRODUCT_PACKAGES += \
     7z \
+    awk \
     bash \
     bzip2 \
     curl \
