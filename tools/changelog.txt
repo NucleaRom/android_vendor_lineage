@@ -1,0 +1,370 @@
+=======================
+     20-08-2016
+=======================
+
+
+   * build/
+4c15694 Merge pull request #15 from CyanogenMod/cm-13.0
+
+   * device/oneplus/oneplus3/
+c170779 Merge pull request #25 from CyanogenMod/cm-13.0
+07d7bf2 op3: Tweak autobrightness
+d2e0ba3 op3: Set missing RIL_QCOM_VERSION
+
+   * external/ffmpeg/
+0a27fb6 Revert "ffmpeg: Additional APE extradata"
+b0f5859 Merge branch 'release/3.0' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+
+   * frameworks/av/
+16d14e1 stagefright: Disable thumbnail mode for 8996-class devices
+e4575ae audioflinger: Always process volume commands from a latest track
+6fde774 audioflinger: set flush pending on invalidating offload track
+e72652f Don't place large objects on the stack
+
+   * kernel/oneplus/msm8996/
+53d9e9f Merge pull request #33 from CyanogenMod/cm-13.0
+4f602ab video: adf: Zero out the mapping data
+b0d166e msm: mdss: fix autorefresh configs for pp-split cases
+12fa06a msm: mdss: fix race condition between iommu attach and sending DCS cmds
+73850c4 USB: dwc3: Fix to debugfs returns with spin_lock
+f71ee89 USB: dwc3: debugfs: Add boundary check in dwc3_store_ep_num()
+046b892 soc: qcom: pil: Add flag to know if modem SSR happened.
+
+   * vendor/oneplus/
+f43c385 Merge pull request #17 from TheMuppets/cm-13.0
+
+=======================
+     19-08-2016
+=======================
+
+
+   * build/
+0e39dd2 build: Add dt.img and kernel target
+6f76f6b generate_extra_images: Rename targets and add 'sec' prefix
+
+   * device/oneplus/oneplus3/
+4ad94c6 op3: Remove unsupported wipower properties
+1b8b406 system.prop: Change the GLES version string to 3.1
+
+   * frameworks/base/
+bc4b71e Merge pull request #59 from CyanogenMod/cm-13.0
+5422685 Ensure packages on adopted media do not move when updated
+
+   * frameworks/native/
+60f8bdf surfaceflinger: Add support for Exynos HWC services
+b7021ef Fix xxhdpi 3072 heap sizes
+
+   * packages/apps/Snap/
+6304f00 SnapdragonCamera: Force removing preview cover for camcorder
+a780bd9 SnapdragonCamera: Fix NPE caused by empty permission result
+f41b627 snap: Change to target SDK 23
+7d7a688 SnapdragonCamera: Remove custom location permission request window
+219fbf4 Minimum viable Android M runtime permissions handling for H.
+db4f534 SnapdragonCamera: Force removing preview cover
+
+   * packages/inputmethods/LatinIME/
+ff8efcf Revert "LatinIME: add shortcut functionality" Fix broken build from incomplete checkin for this change This reverts commit 877f8b481a6c6452a3894df14ec527c21d8e2d8c.
+
+   * prebuilts/cmsdk/
+755b224 prebuilts/cmsdk: Provide release artifact for Fig.
+
+   * vendor/cm/
+bf9a06d Merge branch 'cm-13.0' of https://github.com/OneRomOne/android_vendor_cm into cm-13.0
+c8d5cac Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+af6a5a3 Merge pull request #10 from CyanogenMod/cm-13.0
+
+   * vendor/oneplus/
+44360fd Merge pull request #40 from dianlujitao/cm-13.0
+
+=======================
+     18-08-2016
+=======================
+
+
+   * build/
+d302afe core_minimal.mk: Remove duplicate packages
+
+   * device/oneplus/oneplus3/
+95df6ed op3: Add Alipay fingerprint payment support
+
+   * frameworks/base/
+d119bd8 Apps on adopted storage should stay there during update
+
+   * frameworks/native/
+2a2b06d Fix xxxhdpi 3072 heap sizes
+
+   * frameworks/opt/net/wifi/
+19adf48 Fix potential memory leak
+
+   * packages/inputmethods/LatinIME/
+877f8b4 LatinIME: add shortcut functionality
+
+   * vendor/cm/
+a194731 cm: "Released" means current.
+
+   * vendor/cmsdk/
+c349280 cmsdk: Finalize api level 6 (Fig).
+
+   * vendor/oneplus/
+8a825f8 op3: Add alipay fingerprint payment blobs
+
+=======================
+     17-08-2016
+=======================
+
+
+   * frameworks/base/
+6573f4d SystemUI: Fix build without jack
+f4ca58d Merge pull request #58 from CyanogenMod/cm-13.0
+
+   * packages/apps/Contacts/
+a5730ba Contacs: Fix build without jack
+
+   * packages/apps/ContactsCommon/
+60a394e Fix crash when block incoming call without caller ID
+
+   * packages/apps/Dialer/
+7f23b87 Dialer: Fix build without jack
+
+   * packages/apps/LockClock/
+fa73ab0 LockClock: Clean up proguard, fix build without jack
+
+   * packages/providers/ContactsProvider/
+4346f8e ContactsProvider: Fix build without jack
+
+   * packages/services/LiveLockScreenService/
+09b857e LiveLockScreenService: Fix build without jack
+
+   * packages/services/WeatherService/
+5f53cda WeatherManagerService: Fix build without jack
+
+   * vendor/cm/
+850dd22 charger: Add 640dpi support
+3e85bf7 version: Keep the maintenance version defined and use it if needed
+1bc3827 Merge pull request #40 from CyanogenMod/cm-13.0
+
+=======================
+     16-08-2016
+=======================
+
+
+   * android/
+974968e Revert "Add qrd.xml for working with caf    *s"
+
+   * frameworks/native/
+94774ac dalvik: rework 3 and 4-GB dalvik heap configurations
+
+   * frameworks/opt/net/wifi/
+cab7889 wifi: Stop spamming logs
+
+   * packages/apps/LockClock/
+968e746 LockClock: Don't forcefully enable widget calendar on resume
+
+   * packages/apps/Messaging/
+6086e51 Unachive conversations from unblocked participants
+
+   * packages/services/WeatherService/
+42edf42 Allow Weather service to write to secure settings
+
+   * packages/themes/HexoLibre/
+18ba8af Kover Libre
+
+   * vendor/cmsdk/
+47162a1 Merge pull request #9 from CyanogenMod/cm-13.0
+d47888b Nuclear Boot
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+2661188 Fix string
+
+=======================
+     15-08-2016
+=======================
+
+
+   * build/
+f63b642 build: Source a CM-specific global BoardConfig
+9d66d49 Merge pull request #14 from CyanogenMod/cm-13.0
+
+   * device/oneplus/oneplus3/
+ad8a4a4 op3: Fix mergefail
+ff2a897 op3: Remove healthd extension
+a684e7b op3: Cleanup QC init script
+65e2641 op3: Correct cluster 2 minumum frequency property
+30861b5 op3: Add sha1sums for pinned blobs
+8c08c6a Merge pull request #24 from CyanogenMod/cm-13.0
+
+   * device/oppo/common/
+9eeefe2 Merge pull request #9 from CyanogenMod/cm-13.0
+
+   * device/qcom/common/
+60410f4 Merge pull request #19 from CyanogenMod/cm-13.0
+
+   * external/wpa_supplicant_8/
+dc6ca43 Merge branch 'wlan-service.lnx.1.0-rel.1.0' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/base/
+1a83b36 am: Account for time changes when showing recent activities
+532ae4c git push origin cm-13.0Merge branch 'CyanogenMod-cm-13.0' into cm-13.0
+a282238 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into CyanogenMod-cm-13.0
+
+   * frameworks/opt/net/wifi/
+709a459 Wifi: Do full DHCP if framework roam to a new SSID
+6d461a7 Do not process the results array if no results are received
+37cde44 Reply with a FAILURE if enable network is received for invalid id
+6501ec3 WifiService:Fix profile can't be updated when SIM changed
+4bbf00c Wifi: Issue Disconnect when Ip is changed
+875d895 wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative
+
+   * kernel/oneplus/msm8996/
+813538b Merge pull request #31 from CyanogenMod/cm-13.0
+
+   * packages/apps/Eleven/
+c7f1f86 Convert to new media button receiver logic.
+
+   * packages/apps/Settings/
+1b73575 Fix Merge
+5f126d0 git push origin cm-13.0Merge branch 'CyanogenMod-cm-13.0' into cm-13.0
+70d5dbd Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into CyanogenMod-cm-13.0
+
+   * packages/services/Telephony/
+d0af96a Merge pull request #23 from CyanogenMod/cm-13.0
+
+   * vendor/cm/
+ec6c945 apns: Fix T-Mobile MK DATA access
+e73b8c1 cm: Allow LiveDisplay to write to display misc dir
+e91605c cm: charger: Export the RTC Clock and Alarm timestamps
+cadd0be cm: charger: Add support for double backlight displays
+a584f3a Merge pull request #39 from CyanogenMod/cm-13.0
+7595620 cm: Add custom off-mode charging screen
+48f8df8 extract-utils: Add pinning support
+
+   * vendor/cmsdk/
+e1ba940 CMSDK : Fix generateAlertColorFromDrawable for non BitmapDrawable
+0f17596 Merge pull request #8 from CyanogenMod/cm-13.0
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+afe47bc Refactor OpenWeatherMap weather provider service
+
+   * vendor/oneplus/
+9e90840 Merge pull request #16 from TheMuppets/cm-13.0
+
+=======================
+     14-08-2016
+=======================
+
+
+   * device/oneplus/oneplus3/
+a9b9491 Automatic translation import
+
+   * device/oppo/common/
+8c5a87d Automatic translation import
+
+   * frameworks/base/
+8b088b6 Automatic translation import
+f0beb7f Fix slow anim when using a gesture to open status bar pulldown
+
+   * packages/apps/AudioFX/
+47248a0 Automatic translation import
+
+   * packages/apps/CMBugReport/
+f8fb93b Automatic translation import
+
+   * packages/apps/Camera2/
+e3d02a2 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+b35b459 Automatic translation import
+
+   * packages/apps/Contacts/
+09dccf0 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+ec49830 Automatic translation import
+
+   * packages/apps/DeskClock/
+2412531 Automatic translation import
+
+   * packages/apps/Exchange/
+4758359 Automatic translation import
+
+   * packages/apps/FMRadio/
+1f5e945 Automatic translation import
+
+   * packages/apps/Gallery2/
+a0ee497 Gallery: Remove more possible NPEs
+
+   * packages/apps/Gello/
+8fb25f4 Automatic translation import
+
+   * packages/apps/LockClock/
+f03e72b Automatic translation import
+
+   * packages/apps/Messaging/
+8f1ecd7 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+f3ceccc Automatic translation import
+
+   * packages/apps/Settings/
+2949303 Automatic translation import
+
+   * packages/apps/Snap/
+1a18632 SnapdragonCamera: Adjusting view initialization
+2e94604 SnapdragonCamera: Turn off LONGSHOT on ubifocus scene mode
+1532d76 Automatic translation import
+2781c8e Snap: String improvements
+
+   * packages/apps/ThemeChooser/
+dd53b04 Automatic translation import
+
+   * packages/apps/Trebuchet/
+cef6d9c Automatic translation import
+
+   * packages/apps/TvSettings/
+514c721 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+fa3518f Automatic translation import
+
+   * packages/providers/BookmarkProvider/
+be42e53 Automatic translation import
+
+   * packages/providers/CalendarProvider/
+4066adb Automatic translation import
+
+   * packages/providers/CallLogProvider/
+ba2ea00 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+51d9963 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+490a177 Automatic translation import
+
+   * packages/services/CMAudioService/
+4f029e0 Automatic translation import
+
+   * packages/services/Telecomm/
+7ee39a5 Automatic translation import
+
+   * packages/services/Telephony/
+a686e01 Automatic translation import
+
+   * packages/services/ThemeManagerService/
+93d9504 Automatic translation import
+
+   * packages/wallpapers/LivePicker/
+39dc141 Automatic translation import
+
+   * packages/wallpapers/MagicSmoke/
+b204d0b Automatic translation import
+
+   * vendor/cmsdk/
+4ceac56 Automatic translation import
+
+   * vendor/oneplus/
+b6f7e2b Merge pull request #39 from dianlujitao/cm-13.0
+6505ba5 op3: Fix dpmserviceapp.apk dependence
+
