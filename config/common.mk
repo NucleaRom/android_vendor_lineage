@@ -103,10 +103,16 @@ ifeq ($(WITH_TWRP),true)
 include vendor/nr/config/twrp.mk
 endif
 
-# Boot animation include
-PRODUCT_BOOTANIMATION := vendor/nr/bootanimation/bootanimation.zip
-PRODUCT_COPY_FILES += \
-vendor/nr/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+# Include our custom Nuclear bootanimation
+ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
+     PRODUCT_COPY_FILES += vendor/nr/bootanimation/720.zip:system/media/bootanimation.zip
+else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
+     PRODUCT_COPY_FILES += vendor/nr/bootanimation/1080.zip:system/media/bootanimation.zip
+else ifeq ($(TARGET_BOOT_ANIMATION_RES), 1440)
+     PRODUCT_COPY_FILES += vendor/nr/bootanimation/1440.zip:system/media/bootanimation.zip
+else
+     PRODUCT_COPY_FILES += vendor/nr/bootanimation/1080.zip:system/media/bootanimation.zip
+endif
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
