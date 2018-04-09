@@ -302,6 +302,13 @@ NR_DISPLAY_VERSION := $(NR_BUILD_VERSION)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.nr.display.version=$(NR_DISPLAY_VERSION)
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/nr/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
