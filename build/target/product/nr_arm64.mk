@@ -16,4 +16,7 @@
 $(call inherit-product, build/target/product/aosp_arm64.mk)
 $(call inherit-product, vendor/nr/config/common.mk)
 
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
 PRODUCT_NAME := nr_arm64
