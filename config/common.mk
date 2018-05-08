@@ -319,7 +319,6 @@ PRODUCT_COPY_FILES += \
     vendor/nr/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf 
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/nr/config/partner_gms.mk
--include vendor/cyngn/product.mk
+-include vendor/lineage/config/partner_gms.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
