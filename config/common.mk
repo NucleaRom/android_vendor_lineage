@@ -262,35 +262,10 @@ else
     NR_TAG := Unofficial
 endif
 
-# Include versioning information
-# Format: Major.minor.maintenance(-TAG)
-NR_VERSION_TAG := 8.1-1
-export NR_VERSION := $(NR_VERSION_TAG)-$(NR_TAG)
-ROM_POSTFIX := $(shell date -u +%Y%m%d)
-
-export NR_BUILD_VERSION := NucleaRom-$(NR_VERSION)-$(TARGET_PRODUCT)-$(ROM_POSTFIX)
-export ROM_VERSION := $(NR_VERSION)-$(ROM_POSTFIX)
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.modversion=$(NR_BUILD_VERSION) \
-    ro.nr.buildtype=$(NR_BUILDTYPE) \
-    ro.nr.version=$(NR_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=$(NR_BUILD_VERSION) \
-    ro.nr.buildtype=$(NR_BUILDTYPE) \
-    ro.nr.version=$(NR_VERSION) 
-
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/nr/build/target/product/security/nr
 
 -include vendor/lineage-priv/keys/keys.mk
-
-NR_DISPLAY_VERSION := $(NR_BUILD_VERSION)
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.nr.display.version=$(NR_DISPLAY_VERSION)
 
 # DU Utils Library
 PRODUCT_PACKAGES += \
