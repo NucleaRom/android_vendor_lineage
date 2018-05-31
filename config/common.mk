@@ -247,6 +247,16 @@ endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/nr/overlay/common
 
+# NucleaRom System Version
+# Include versioning information
+# Format: Major.minor.maintenance(-TAG)
+NR_VERSION_TAG := 8.1-1
+export NR_VERSION := $(NR_VERSION_TAG)-$(NR_TAG)
+ROM_POSTFIX := $(shell date -u +%Y%m%d)
+
+export NR_BUILD_VERSION := NucleaRom-$(NR_VERSION)-$(TARGET_PRODUCT)-$(ROM_POSTFIX)
+export ROM_VERSION := $(NR_VERSION)-$(ROM_POSTFIX)
+
 # NR_BUILDTYPE belongs to the nr.mk
 ifeq ($(NR_BUILDTYPE), Official)
     NR_TAG := Official
