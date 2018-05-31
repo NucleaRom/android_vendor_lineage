@@ -27,7 +27,6 @@ ADDITIONAL_BUILD_PROPERTIES += \
 ADDITIONAL_BUILD_PROPERTIES += \
   ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
-    
 
 
 
