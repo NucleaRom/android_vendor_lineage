@@ -5,6 +5,7 @@ PRODUCT_COPY_FILES += \
     vendor/nr/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
     vendor/nr/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
     vendor/nr/config/permissions/org.lineageos.style.xml:system/etc/permissions/org.lineageos.style.xml \
+    vendor/nr/config/permissions/org.lineageos.trust.xml:system/etc/permissions/org.lineageos.trust.xml \
     vendor/nr/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
 
 # Lineage Platform Library
